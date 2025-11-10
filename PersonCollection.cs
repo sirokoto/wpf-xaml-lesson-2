@@ -18,6 +18,7 @@ namespace WpfApp2
                 Person obj = new Person(split[0], split[1], split[2]);
                 list.Add(obj);
             }
+            fS.Close();
         }
         public void Add(Person obj)
         {
@@ -30,6 +31,15 @@ namespace WpfApp2
         }
         public IEnumerator<Person> GetEnumerator() { return list.GetEnumerator(); }
 
-
+        public string this[int index] { 
+            get
+            {
+                return (string)list.[index];
+            }
+            set
+            {
+                list[index] = value;
+            }
+        }
     }
 }
