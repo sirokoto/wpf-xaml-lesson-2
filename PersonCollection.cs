@@ -29,16 +29,23 @@ namespace WpfApp2
         {
             foreach (Person obj in list) { if (obj.Id == id) list.Remove(obj); }
         }
+
+        public Person GetItem(string? id)
+        {
+            foreach (Person obj in list) { 
+                if (obj.Id == id) 
+                { 
+                    return obj; 
+                } 
+            }
+            return null; 
+        }
         public IEnumerator<Person> GetEnumerator() { return list.GetEnumerator(); }
 
-        public string this[int index] { 
+        public Person this[string id] { 
             get
             {
-                return (string)list.[index];
-            }
-            set
-            {
-                list[index] = value;
+                return GetItem(id);
             }
         }
     }

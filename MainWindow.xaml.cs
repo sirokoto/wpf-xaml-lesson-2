@@ -33,6 +33,8 @@ namespace WpfApp2
             xmlWriter.WriteEndElement();
             xmlWriter.WriteEndDocument();
             xmlWriter.Close();
+            PersonCollection workers = new PersonCollection();
+            workers["15"].Name = "das";
         }
             
     }
