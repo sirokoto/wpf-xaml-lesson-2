@@ -18,8 +18,8 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="227*"/>
         </Grid.RowDefinitions>
-        <GridSplitter Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Center" Width="5" Background="Aqua" Cursor="SizeWE"/>
-        <GridSplitter Grid.Column="3" Grid.Row="2" HorizontalAlignment="Stretch" Height="5" Background="Aqua"/>
+        <GridSplitter Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Center" Width="5" Cursor="SizeWE"/>
+        <GridSplitter Grid.Column="3" Grid.Row="2" HorizontalAlignment="Stretch" Height="5"/>
         <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
             <MenuItem >
                 <MenuItem.Header>

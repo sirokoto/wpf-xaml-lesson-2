@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace WpfApp2
 {
@@ -19,7 +20,20 @@ namespace WpfApp2
         public MainWindow()
         {
             InitializeComponent();
-            
+            var xmlWriter = new XmlTextWriter("struct.xml",  null);
+            xmlWriter.Formatting = Formatting.Indented;
+            xmlWriter.IndentChar = '\t';
+            xmlWriter.Indentation = 1;
+
+            xmlWriter.WriteStartDocument();
+            xmlWriter.WriteStartElement("rootNode");
+            xmlWriter.WriteStartElement("node");
+            xmlWriter.WriteStartAttribute("name");
+            xmlWriter.WriteString("Центральный");
+            xmlWriter.WriteEndElement();
+            xmlWriter.WriteEndDocument();
+            xmlWriter.Close();
         }
+            
     }
 }

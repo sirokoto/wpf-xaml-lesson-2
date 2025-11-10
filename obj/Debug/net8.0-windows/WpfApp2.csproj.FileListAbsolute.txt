@@ -18,3 +18,4 @@ C:\Users\PlatonovRA\source\repos\WpfApp2\obj\Debug\net8.0-windows\refint\WpfApp2
 C:\Users\PlatonovRA\source\repos\WpfApp2\obj\Debug\net8.0-windows\WpfApp2.pdb
 C:\Users\PlatonovRA\source\repos\WpfApp2\obj\Debug\net8.0-windows\WpfApp2.genruntimeconfig.cache
 C:\Users\PlatonovRA\source\repos\WpfApp2\obj\Debug\net8.0-windows\ref\WpfApp2.dll
+C:\Users\PlatonovRA\source\repos\WpfApp2\obj\Debug\net8.0-windows\WpfApp2.sourcelink.json
