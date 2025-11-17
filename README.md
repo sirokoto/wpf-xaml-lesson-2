@@ -8,6 +8,6 @@ This program should parse TXT file and write it down in XML file, then it should
 *Example*:
 
 ```txt
-1+2_1+Брусов Анатолий+25+10000+1 &2192;    1   2_1      Брусов Анатолий 25  10000   1
+1+2_1+Брусов Анатолий+25+10000+1 &rarr;    1   2_1      Брусов Анатолий 25  10000   1
                                             ID  Philial  Full Name       Age Salary  Internship 
 ```
