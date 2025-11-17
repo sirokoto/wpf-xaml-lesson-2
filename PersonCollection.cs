@@ -14,8 +14,8 @@ namespace WpfApp2
             string line; string[] split;
             while ((line = sR.ReadLine()) != null)
             {
-                split = line.Split(" ");
-                Person obj = new Person(split[0], split[1], split[2]);
+                split = line.Split("+");
+                Person obj = new Person(split[0], split[1], split[2], split[3], split[4], split[5]);
                 list.Add(obj);
             }
             fS.Close();

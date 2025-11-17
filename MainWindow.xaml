@@ -38,8 +38,8 @@
                 </MenuItem.Header>
             </MenuItem>
         </Menu>
-        <StackPanel Grid.Row="1" Grid.Column="0" Grid.RowSpan="3">
-            <TreeView>
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" VerticalAlignment="Stretch">
+            <TreeView VerticalAlignment="Stretch" Name="WorkersTree">
                 <TreeViewItem>
                     <TreeViewItem.Header>
                         <StackPanel Orientation="Horizontal">

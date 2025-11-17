@@ -1,13 +1,5 @@
-﻿using System.Text;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Xml;
 
 namespace WpfApp2
@@ -17,24 +9,28 @@ namespace WpfApp2
     /// </summary>
     public partial class MainWindow : Window
     {
+        }
         public MainWindow()
         {
             InitializeComponent();
+            PersonCollection workers = new PersonCollection();
             var xmlWriter = new XmlTextWriter("struct.xml",  null);
             xmlWriter.Formatting = Formatting.Indented;
             xmlWriter.IndentChar = '\t';
             xmlWriter.Indentation = 1;
-
-            xmlWriter.WriteStartDocument();
             xmlWriter.WriteStartElement("rootNode");
             xmlWriter.WriteStartElement("node");
             xmlWriter.WriteStartAttribute("name");
             xmlWriter.WriteString("Центральный");
+
+            xmlWriter.WriteStartDocument();
             xmlWriter.WriteEndElement();
             xmlWriter.WriteEndDocument();
             xmlWriter.Close();
-            PersonCollection workers = new PersonCollection();
-            workers["15"].Name = "das";
+            //workers["15"] = "das";
+            var doc = new XmlDocument();
+            doc.Load("struct.xml");
+            XmlNode root;
         }
             
     }
