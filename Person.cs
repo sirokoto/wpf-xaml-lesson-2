@@ -9,7 +9,7 @@ namespace WpfApp2
     internal class Person
     {
         private string id = "";
-        private string philial = "";
+        private string branch = "";
         private string fullName = "";
         private string age = "";
         private string salary = "";
@@ -19,10 +19,10 @@ namespace WpfApp2
             get { return id; }
             set { id = value; } 
         }
-        public string Philial
+        public string Branch
         {
-            get { return philial; }
-            set { philial = value; }
+            get { return branch; }
+            set { branch = value; }
         }
         public string FullName
         {
@@ -49,10 +49,10 @@ namespace WpfApp2
             get { return stats; }
             set { stats = value; }
         }
-        public Person(string id, string philial, string fullName, string age, string salary, string internship)
+        public Person(string id, string branch, string fullName, string age, string salary, string internship)
         {
             this.Id = id;
-            this.Philial = philial;
+            this.Branch = branch;
             this.FullName = fullName;
             this.Age = age;
             this.Salary = salary;
@@ -62,7 +62,7 @@ namespace WpfApp2
         public Person() {
             this.Id = "Default";
             this.FullName = "Default";
-            this.Philial = "Default";
+            this.branch = "Default";
             this.Age = "Default";
             this.Salary = "Default";
             this.Internship = "Default";
