@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rootNode text="Компания" id="0">
+	<node text="Центральный" id="1">
+		<node text="Бухгалтерия" id="1_1"/>
+		<node text="Кадры" id="1_2"/>
+		<node text="Производство" id="1_3"/>
+	</node>
+
+	<node text="Южный" id="2">
+		<node text="Кадры" id="2_1"/>
+		<node text="Производство" id="2_2"/>
+	</node>
+
+	<node text="Северный" id="3">
+		<node text="Бухгалтерия" id="3_1"/>
+		<node text="Кадры" id="3_2"/>
+		<node text="Производство" id="3_3">
+			<node text="Производство(цех №1)" id="3_3_1"/>
+		</node>
+	</node>
+
+</rootNode>
